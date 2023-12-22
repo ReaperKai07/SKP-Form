@@ -1,0 +1,156 @@
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: white;
+    color: black;
+}
+
+body {
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+td {
+    padding: 10px;
+}
+
+.row {
+    width: 100%;
+}
+
+.result-img {
+    width: 150px;
+}
+
+.info {
+    width: 750px;
+}
+
+.statement-info {
+    width: 200px;
+}
+
+.sila {
+    margin-bottom: 5px;
+}
+
+.uitm {
+    width: 10%;
+}
+
+.logo-uitm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 200px;
+}
+
+.student-information {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    align-items: start;
+    justify-content: start;
+    font-weight: bold;
+}
+
+.section-title {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.signature {
+    margin-top: 20px;
+}
+
+.sub-sign {
+    width: 50%;
+}
+
+.admission  {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.support {
+    margin-bottom: 100px;
+}
+
+.sign-date {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+}
+
+.sign-student {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+
+.sign {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.stud-info {
+    width: 750px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.stud-inner {
+    width: 750px;
+}
+
+.info {
+    margin-bottom: 20px;
+    
+}
+
+.blank {
+    display: inline;
+}
+
+p {
+    display: inline;
+    margin-bottom: 0px;
+}
+
+footer {
+    text-align: center;
+    -webkit-text-fill-color: white;
+}
