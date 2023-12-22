@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="form-style.css">
+  <script defer src="form.js"></script>
+  <title>3 - Form</title>
+</head>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="requirement.html">Requirement Advertisement</a>
+  <a class="active" href="form.html">Application Form</a>
+  <a href="Borang_SKP.pdf" target="_blank">PDF Form</a>
+</div>
+
+<body>
+  <h1 style="text-align: center; padding-top: 20px;">Borang Permohonan SKP</h1>
+  <div class="container">
+    <form class="needs-validation was-validated" novalidate="" method="post" action="result.html" id="form">
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">A. MAKLUMAT PELAJAR</h5>
+          <div class="form-label input-control">
+            <label for="studName">Nama Penuh</label>
+            <input type="text" class="form-control" id="studName" pattern="[a-zA-Z ]+" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+          <div class="form-label input-control">
+            <label for="studBirt">Tarikh Lahir</label>
+            <input type="date" class="form-control" id="studBirth" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+          <div class="form-label input-control">
+            <label for="studHomeAdd">Alamat Rumah</label>
+            <textarea class="form-control" id="studHomeAdd" placeholder="Street, City, State, Postcode"
+              required></textarea>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+          <div class="form-label input-control">
+            <label for="studId">Nombor Pelajar</label>
+            <input type="text" class="form-control" id="studId" pattern="[0-9]{10}" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+          <div class="form-label input-control">
+            <label for="studFac">Kod Fakulti</label>
+            <input type="text" class="form-control" id="studFac" pattern="[a-zA-Z0-9]{5}" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+          <div class="form-label input-control">
+            <label for="studPhone">Nombor Telefon</label>
+            <input type="tel" class="form-control" id="studPhone" pattern="[0-9]{10}" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+          <div class="form-label input-control">
+            <label for="studHomeAddCurrent">Alamat Kolej / Rumah Sewaan</label>
+            <textarea class="form-control" id="studHomeAddCurrent" placeholder="Street, City, State, Postcode"
+              required></textarea>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">B. MAKLUMAT BAPA / PENJAGA</h5>
+          <div class="form-label input-control">
+            <label for="fName">Nama Penuh Bapa / Penjaga</label>
+            <input type="text" class="form-control" id="fName" pattern="[a-zA-Z ]+" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+          <div class="form-label input-control">
+            <label for="fJob">Pekerjaan Bapa / Penjaga</label>
+            <input type="text" class="form-control" id="fJob" pattern="[a-zA-Z ]+" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+          <div class="form-label input-control">
+            <label for="fEmployer">Alamat Majikan</label>
+            <textarea class="form-control" id="fEmployer" placeholder="Street, City, State, Postcode"
+              required></textarea>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+          <div class="form-label input-control">
+            <label for="fIncome">Pendapatan Sebulan</label>
+            <input type="number" class="form-control" id="fIncome" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+          <div class="form-label input-control">
+            <label for="mJob">Pekerjaan Ibu</label>
+            <input type="text" class="form-control" id="mJob" pattern="[a-zA-Z ]+" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+          <div class="form-label input-control">
+            <label for="mIncome">Pendapatan Sebulan</label>
+            <input type="number" class="form-control" id="mIncome" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+          <div class="form-label input-control">
+            <label for="childSchool">Bilangan Anak Masih Bersekolah</label>
+            <input type="number" class="form-control" id="childSchool" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+          <div class="form-label input-control">
+            <label for="childWork">Bilangan Anak Telah Bekerja</label>
+            <input type="number" class="form-control" id="childWork" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">C. Muat Naik Dokumen</h5>
+          <div class="form-label">
+            <label for="childSchool">Formal Picture</label>
+            <input type="file" class="form-control" aria-label="Image file upload" accept="image/png" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+          <div class="form-label">
+            <label for="childSchool">Latest Transcript</label>
+            <input type="file" class="form-control" aria-label="PDF file upload" accept="application/pdf" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+            <div class="error"></div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="submit" style="width: 100%; margin-top: 16px;">Submit</button>
+    </form>
+  </div>
+</body>
+
+<footer class="py-3">
+  <p class="text-center text-muted">© 2023 Kai & Co</p>
+</footer>
+
+</html>
