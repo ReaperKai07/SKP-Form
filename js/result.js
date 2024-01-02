@@ -38,6 +38,21 @@ const p_values = [
 
 const blankElements = document.querySelectorAll('.blank');
 
+const uploadedImage = document.getElementById('uploadedImage');
+
+const base64String = localStorage.getItem('uploadedImage');
+
+const displayImage = document.getElementById('displayImage');
+
+console.log(base64String)
+
+if (base64String) {
+  displayImage.src = base64String;
+} else {
+  // Handle the case when the Base64 string is not available
+  displayImage.alt = "No image found";
+}
+
 localStorageKeys.forEach((key, index) => {
   const value = localStorage.getItem(key);
 

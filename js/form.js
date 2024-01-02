@@ -13,6 +13,8 @@ const mJob = document.getElementById('mJob');
 const mIncome = document.getElementById('mIncome');
 const childSchool = document.getElementById('childSchool');
 const childWork = document.getElementById('childWork');
+const studTrans = document.getElementById('studTranscript');
+const studImg = document.getElementById('studImg');
 
 
 forms.addEventListener('submit', e => {
@@ -58,6 +60,8 @@ const validateInputs = () => {
   const mIncomeValue = mIncome.value.trim();
   const childSchoolValue = childSchool.value.trim();
   const childWorkValue = childWork.value.trim();
+  const studImgValue = studImg.value;
+  const studTransValue = studTrans.value;
 
 
   if (studNameValue === '') {
@@ -166,10 +170,24 @@ const validateInputs = () => {
     counter++;
   }
 
+  if (studImgValue === '') {
+    setError(studImg, "Sila muat naik gambar.");
+  } else {
+    setSuccess(studImg);
+    counter++;
+  }
+
+  if (studTransValue === '') {
+    setError(studTrans, "Sila muat naik transkrip.");
+  } else {
+    setSuccess(studTrans);
+    counter++;
+  }
+
   console.log(counter)
 
-  if (counter === 15) {
-    window.location.href = "result.html";
+  if (counter === 17) {
+    // window.location.href = "result.html";
 
     localStorage.setItem('studName', studNameValue);
     localStorage.setItem('studBirth', studBirthValue);
@@ -186,6 +204,24 @@ const validateInputs = () => {
     localStorage.setItem('mIncome', mIncomeValue);
     localStorage.setItem('childSchool', childSchoolValue);
     localStorage.setItem('childWork', childWorkValue);
+
+    const file = studImg.files[0];
+
+
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = function(event) {
+        const base64String = event.target.result;
+  
+        // Store the Base64 string in local storage
+        localStorage.setItem('uploadedImage', base64String);
+      };
+  
+      reader.readAsDataURL(file);
+    } else {
+      alert("No image uploaded.")
+    }
 
     window.location.href = "result.html";
 
